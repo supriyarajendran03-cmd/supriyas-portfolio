@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Supriya Rajendran | Beginner Web Developer</title>
+  <meta name="description" content="Portfolio of Supriya Rajendran, a student learning web development with HTML, CSS, JavaScript and Java.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%2314213d'/%3E%3Ctext x='50' y='66' font-size='54' text-anchor='middle' fill='%23f2b134' font-family='Georgia'%3ES%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    /* Apply saved theme before paint to avoid a flash */
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="logo" href="#top" aria-label="Supriya Rajendran, back to top">Supriya<span>.</span></a>
+
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark theme">
+          <span aria-hidden="true" id="theme-icon">&#9790;</span>
+        </button>
+        <button class="icon-btn menu-btn" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+          <span aria-hidden="true" class="bars"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="hero-role">Beginner web developer &amp; student</p>
+          <h1 id="hero-title">Hi, I'm Supriya Rajendran.</h1>
+          <p class="lead">I enjoy learning how to turn an idea into a page that works on every screen, and I'm building my skills in HTML, CSS, JavaScript and Java.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#projects">View my projects</a>
+            <a class="btn btn-ghost" href="#contact">Contact me</a>
+          </div>
+        </div>
+
+        <aside class="welcome-card" aria-labelledby="welcome-title">
+          <h2 id="welcome-title">Who's visiting?</h2>
+          <div class="chip-row" role="group" aria-label="Choose who you are">
+            <button type="button" class="chip is-active" data-visitor="recruiter" aria-pressed="true">Recruiter</button>
+            <button type="button" class="chip" data-visitor="teacher" aria-pressed="false">Teacher</button>
+            <button type="button" class="chip" data-visitor="friend" aria-pressed="false">Friend</button>
+          </div>
+          <p id="welcome-message" class="welcome-message" aria-live="polite"></p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container narrow">
+        <h2 id="about-title">About me</h2>
+        <p>I'm a college student studying computer science at KGCAS. I started with Java and then moved to web development, because I like seeing my code turn into something people can click and use.</p>
+        <p>Right now I'm practising clean page structure, responsive layouts and small JavaScript features. I hope to work as a web or software developer after graduation, ideally on a team where I can keep learning.</p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section alt" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <h2 id="skills-title">Skills</h2>
+        <div class="skill-grid">
+          <div class="skill-group">
+            <h3>Web</h3>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Responsive design</li></ul>
+          </div>
+          <div class="skill-group">
+            <h3>Programming</h3>
+            <ul class="tags"><li>Java</li><li>Object-oriented basics</li><li>Problem solving</li></ul>
+          </div>
+          <div class="skill-group">
+            <h3>Tools</h3>
+            <ul class="tags"><li>Git</li><li>GitHub</li><li>VS Code</li></ul>
+          </div>
+          <div class="skill-group">
+            <h3>Other</h3>
+            <ul class="tags"><li>Communication</li><li>Teamwork</li><li>Research</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <h2 id="projects-title">Projects</h2>
+
+        <div class="filters" role="group" aria-label="Filter projects">
+          <button type="button" class="chip is-active" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" class="chip" data-filter="web" aria-pressed="false">Web</button>
+          <button type="button" class="chip" data-filter="java" aria-pressed="false">Java</button>
+        </div>
+
+        <div class="project-grid">
+          <article class="project" data-category="web">
+            <img class="project-img" src="images/portfolio-project.svg" alt="Illustration with the text Supriya’s Portfolio on a teal background" width="600" height="320" loading="lazy">
+            <div class="project-body">
+              <h3>Supriya’s Portfolio</h3>
+              <p>A responsive personal site with a mobile menu, a light and dark theme, project filters and a validated contact form.</p>
+              <ul class="tags small"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+              <button type="button" class="more-btn" aria-expanded="false" aria-controls="details-1">Show details</button>
+              <div class="details" id="details-1" hidden>
+                <p><strong>What I did:</strong> Designed the layout, wrote all the HTML, CSS and JavaScript by hand, and deployed it online.</p>
+                <p><strong>What I learned:</strong> Responsive layouts, keyboard accessibility and organising a project into folders.</p>
+              </div>
+              <p class="note">You are looking at it right now.</p>
+              <a class="text-link" href="https://github.com/supriyarajendran03-cmd/supriyas-portfolio" target="_blank" rel="noopener">View source on GitHub<span class="sr-only"> (opens in a new tab)</span></a>
+            </div>
+          </article>
+
+          <article class="project" data-category="java">
+            <img class="project-img" src="images/java-project.svg" alt="Illustration with the text Java Project 2 on a navy background" width="600" height="320" loading="lazy">
+            <div class="project-body">
+              <h3>Java Project 2</h3>
+              <p>A Java project built as part of my coursework. The full source code is available on GitHub.</p>
+              <ul class="tags small"><li>Java</li><li>Git</li><li>GitHub</li></ul>
+              <button type="button" class="more-btn" aria-expanded="false" aria-controls="details-2">Show details</button>
+              <div class="details" id="details-2" hidden>
+                <p><strong>What I did:</strong> Planned the program, wrote and tested the code, and pushed it to GitHub.</p>
+                <p><strong>What I learned:</strong> Structuring a Java program into classes and using version control.</p>
+              </div>
+              <a class="text-link" href="https://github.com/supriyarajendran03-cmd/java-project2" target="_blank" rel="noopener">View source on GitHub<span class="sr-only"> (opens in a new tab)</span></a>
+            </div>
+          </article>
+
+          <article class="project" data-category="web">
+            <img class="project-img" src="images/practice-project.svg" alt="Illustration of a checklist with the text Practice project" width="600" height="320" loading="lazy">
+            <div class="project-body">
+              <h3>Practice project: To-do list</h3>
+              <p>A small practice exercise where items can be added, ticked off and removed using JavaScript.</p>
+              <ul class="tags small"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+              <button type="button" class="more-btn" aria-expanded="false" aria-controls="details-3">Show details</button>
+              <div class="details" id="details-3" hidden>
+                <p><strong>What I did:</strong> Built the interface and wrote the code that updates the list.</p>
+                <p><strong>What I learned:</strong> Handling events and changing the page with the DOM.</p>
+              </div>
+              <p class="note">Not published online. Source files are in the submission folder.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section alt" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div>
+          <h2 id="contact-title">Contact</h2>
+          <p>Want to talk about a project or an opportunity? Email me or use the form.</p>
+          <p><a class="text-link" href="mailto:supriyarajendran03@gmail.com">supriyarajendran03@gmail.com</a></p>
+          <p class="note">This form checks your input only. It does not send a message, so please use the email link above.</p>
+        </div>
+
+        <form id="contact-form" class="form" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required aria-describedby="name-error">
+            <p class="error" id="name-error" role="alert"></p>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-error">
+            <p class="error" id="email-error" role="alert"></p>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required aria-describedby="message-error"></textarea>
+            <p class="error" id="message-error" role="alert"></p>
+          </div>
+          <button class="btn btn-primary" type="submit">Check my message</button>
+          <p id="form-status" class="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> Supriya Rajendran</p>
+      <p><a href="https://github.com/supriyarajendran03-cmd" target="_blank" rel="noopener">GitHub<span class="sr-only"> (opens in a new tab)</span></a></p>
+    </div>
+  </footer>
+
+  <button type="button" class="to-top" id="to-top" aria-label="Back to top" hidden>&uarr;</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
